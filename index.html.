@@ -1,39 +1,105 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mecánico a Domicilio | David Romero</title>
+    <title>David Romero | Mecánico a Domicilio</title>
     <style>
         :root {
-            --negro: #1a1a1a;
+            --negro: #121212;
             --amarillo: #f1c40f;
             --rojo: #e74c3c;
-            --blanco: #ffffff;
-        }  
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; background-color: var(--negro); color: var(--blanco); }     
-        header { 
-            background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&fit=crop&q=80&w=1000');
-            background-size: cover; text-align: center; padding: 80px 20px; border-bottom: 5px solid var(--amarillo);
+            --gris: #2c3e50;
         }
-        .btn-contacto {
-            display: inline-block; background-color: var(--rojo); color: white; padding: 15px 30px;
-            text-decoration: none; font-weight: bold; border-radius: 5px; font-size: 1.2rem; margin-top: 20px;
+
+        body { 
+            font-family: 'Arial', sans-serif; 
+            margin: 0; 
+            background-color: var(--negro); 
+            color: white; 
+            line-height: 1.6;
         }
-        .servicios { padding: 50px 20px; display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; max-width: 1200px; margin: auto; }     
-        .card { background: #222; padding: 20px; border: 1px solid #333; border-radius: 10px; text-align: center; transition: 0.3s; }
-        .card:hover { border-color: var(--amarillo); }
-        .card h3 { color: var(--amarillo); }
-        footer { background: #111; text-align: center; padding: 30px; font-size: 0.9rem; border-top: 1px solid #333; }
-        .info-contacto { color: var(--amarillo); font-weight: bold; }
+
+        header {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+                        url('https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?q=80&w=2000');
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+            padding: 100px 20px;
+            border-bottom: 8px solid var(--amarillo);
+        }
+
+        .logo-text { font-size: 3rem; font-weight: bold; margin: 0; color: white; text-transform: uppercase; }
+        .sub-text { font-size: 1.5rem; color: var(--rojo); font-weight: bold; margin-bottom: 20px; }
+
+        .btn-llamada {
+            display: inline-block;
+            background-color: var(--rojo);
+            color: white;
+            padding: 20px 40px;
+            text-decoration: none;
+            font-size: 1.4rem;
+            font-weight: bold;
+            border-radius: 50px;
+            box-shadow: 0 4px 15px rgba(231, 76, 60, 0.4);
+            transition: 0.3s;
+        }
+        .btn-llamada:hover { transform: scale(1.05); background-color: #c0392b; }
+
+        .servicios { padding: 60px 20px; max-width: 1100px; margin: auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+        
+        .tarjeta {
+            background: #1e1e1e;
+            padding: 30px;
+            border-left: 5px solid var(--amarillo);
+            border-radius: 10px;
+        }
+        .tarjeta h3 { color: var(--amarillo); margin-top: 0; }
+
+        footer {
+            background: #000;
+            text-align: center;
+            padding: 40px 20px;
+            border-top: 1px solid #333;
+        }
+        .contacto-item { color: var(--amarillo); font-size: 1.1rem; margin: 10px 0; }
     </style>
 </head>
 <body>
+
 <header>
-    <h1>MECÁNICO A DOMICILIO</h1>
-    <h2 style="color: var(--rojo);">DAVID ROMERO</h2>
-    <p>Servicio de Reparación Automotriz Móvil - Llegamos donde estés.</p>
-    <a href="tel:30091234688" class="btn-contacto">📞 LLAMAR AHORA: 3009659888</a>
+    <p class="logo-text">Mecánico a Domicilio</p>
+    <p class="sub-text">DAVID ROMERO</p>
+    <p style="max-width: 600px; margin: 0 auto 30px auto; font-size: 1.1rem;">
+        Servicio de Reparación Automotriz Móvil. Expertos en mecánica general, diagnóstico computarizado y emergencias. ¡Llegamos donde estés!
+    </p>
+    <a href="tel:3009659888" class="btn-llamada">📞 LLAMAR AHORA: 300 965 9888</a>
 </header>
-<section class="# Mec-nicom-vil-
-Index.html
+
+<section class="servicios">
+    <div class="tarjeta">
+        <h3>⚡ Diagnóstico Rápido</h3>
+        <p>Escaneo por computadora y revisión de fallas eléctricas en el sitio.</p>
+    </div>
+    <div class="tarjeta">
+        <h3>🔧 Mecánica General</h3>
+        <p>Frenos, suspensión, cambio de aceite y mantenimiento preventivo a domicilio.</p>
+    </div>
+    <div class="tarjeta">
+        <h3>🚨 Emergencias 24/7</h3>
+        <p>¿Te quedaste varado? No te preocupes, David Romero va en camino a ayudarte.</p>
+    </div>
+</section>
+
+<footer>
+    <p class="contacto-item">📧 Email: juan.perzc@mecanicomovil.com</p>
+    <p class="contacto-item">🌐 Web: www.mecanicomovil.com</p>
+    <p class="contacto-item">📍 Cobertura Total en tu Ciudad</p>
+    <hr style="width: 50px; border-color: #444;">
+    <p style="font-size: 0.8rem; color: #888;">&copy; 2026 David Romero - Mecánico Móvil Profesional</p>
+</footer>
+
+</body>
+</html>
