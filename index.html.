@@ -3,32 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>David Romero - Mecánico Móvil</title>
+    <title>Mecánico a Domicilio Pereira | David Romero</title>
+    <meta name="description" content="Servicio de mecánico a domicilio en Pereira y Risaralda con David Romero. Reparación automotriz y emergencias 24/7.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
-        body { font-family: sans-serif; margin: 0; background: #1a1a1a; color: white; text-align: center; }
-        .header { background: #e74c3c; padding: 50px 20px; border-bottom: 5px solid #f1c40f; }
-        h1 { margin: 0; font-size: 2.5rem; }
-        .servicio { color: #f1c40f; font-weight: bold; font-size: 1.2rem; }
-        .btn-contacto { 
-            display: inline-block; background: #27ae60; color: white; 
-            padding: 20px 30px; text-decoration: none; border-radius: 50px; 
-            font-weight: bold; margin-top: 30px; font-size: 1.3rem;
-        }
-        .info { padding: 40px 20px; line-height: 1.6; }
+        :root { --rojo: #d35400; --oscuro: #1a1a1a; --amarillo: #f1c40f; }
+        body { font-family: 'Segoe UI', sans-serif; margin: 0; background: #f4f4f4; text-align: center; }
+        .header { background: var(--rojo); color: white; padding: 40px 20px; border-bottom: 6px solid var(--amarillo); }
+        .ubicacion { background: #2c3e50; color: white; padding: 12px; font-weight: bold; }
+        .btn { display: flex; align-items: center; justify-content: center; gap: 10px; padding: 18px; margin: 15px auto; border-radius: 12px; text-decoration: none; font-weight: bold; width: 85%; max-width: 350px; font-size: 1.1rem; }
+        .btn-llamada { background: #2c3e50; color: white; }
+        .btn-whatsapp { background: #25d366; color: white; }
+        .servicios { background: white; padding: 20px; border-radius: 10px; margin: 20px auto; max-width: 400px; text-align: left; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
     </style>
 </head>
 <body>
-    <div class="header">
-        <h1>DAVID ROMERO</h1>
-        <p class="servicio">MECÁNICO A DOMICILIO</p>
+
+<header class="header">
+    <i class="fas fa-screwdriver-wrench" style="font-size: 50px; color: var(--amarillo);"></i>
+    <h1>DAVID ROMERO</h1>
+    <p>Mecánico a Domicilio</p>
+</header>
+
+<div class="ubicacion">
+    <i class="fas fa-map-marker-alt"></i> Pereira, Risaralda y Alrededores
+</div>
+
+<div class="contenido" style="padding: 20px;">
+    <h2>¿Necesitas un Mecánico?</h2>
+    
+    <a href="tel:3009659888" class="btn btn-llamada">
+        <i class="fas fa-phone"></i> LLAMAR: 300 965 9888
+    </a>
+
+    <a href="https://wa.me/573009659888?text=Hola%20David,%20necesito%20un%20servicio%20mecánico%20en%20Pereira" class="btn btn-whatsapp">
+        <i class="fab fa-whatsapp"></i> ESCRÍBEME AL WHATSAPP
+    </a>
+
+    <div class="servicios">
+        <p><i class="fas fa-check" style="color: var(--rojo);"></i> Mecánica en General</p>
+        <p><i class="fas fa-check" style="color: var(--rojo);"></i> Diagnóstico con Scanner</p>
+        <p><i class="fas fa-check" style="color: var(--rojo);"></i> Emergencias 24 Horas</p>
     </div>
-    <div class="info">
-        <p>Servicio de Reparación Automotriz Móvil - Llegamos donde estés.</p>
-        <p>Mecánica en General • Diagnóstico • Emergencias</p>
-        
-        <a href="tel:3009659888" class="btn-contacto">📞 LLAMAR: 300 965 9888</a>
-        <br><br>
-        <p>📧 obedromero277@gmail.com</p>
-    </div>
+
+    <footer style="margin-top: 30px; color: #777;">
+        <p><i class="fas fa-envelope"></i> obedromero277@gmail.com</p>
+        <p>&copy; 2026 David Romero | Pereira</p>
+    </footer>
+</div>
+
 </body>
 </html>
