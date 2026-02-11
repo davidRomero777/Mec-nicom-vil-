@@ -33,7 +33,7 @@
     <h1>MECÁNICO A DOMICILIO</h1>
     <h2 style="color: var(--rojo);">DAVID ROMERO</h2>
     <p>Servicio de Reparación Automotriz Móvil - Llegamos donde estés.</p>
-    <a href="tel:30091234688" class="btn-contacto">📞 LLAMAR AHORA: 300 9123 4688</a>
+    <a href="tel:30091234688" class="btn-contacto">📞 LLAMAR AHORA: 3009659888</a>
 </header>
 <section class="# Mec-nicom-vil-
 Index.html
